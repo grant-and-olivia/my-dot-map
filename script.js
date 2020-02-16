@@ -1,9 +1,9 @@
 $( document ).ready(function() {
-	//console.log(process.env);
+	
 	$.ajax({
 		url: "https://api.github.com/repos/grant-and-olivia/my-dot-map/contents/users/grant.json",
 		headers: {
-			"Authorization": "token change",
+			"Authorization": "token bla",
 			"Accept": "application/json"
 		},
 		dataType: "json",
@@ -14,4 +14,5 @@ $( document ).ready(function() {
 			console.log("error: " + error);
 	    }
 	});
+	console.log(env);
 });
