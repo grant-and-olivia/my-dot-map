@@ -14,5 +14,5 @@ $( document ).ready(function() {
 			console.log("error: " + error);
 	    }
 	});
-	console.log(testSecret);
+	console.log(env.testSecret);
 });
