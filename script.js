@@ -14,5 +14,6 @@ $( document ).ready(function() {
 			console.log("error: " + error);
 	    }
 	});
-	console.log(${{ secrets.GITHUB_TOKEN }});
+	var token = ${{ secrets.GITHUB_TOKEN }};
+	console.log(token);
 });
