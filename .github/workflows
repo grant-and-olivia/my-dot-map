@@ -1,2 +1,0 @@
-env: # Or as an environment variable
-	testSecret: ${{ secrets.TEST_SECRET }}
