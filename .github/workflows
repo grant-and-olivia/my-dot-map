@@ -1,4 +1,2 @@
-steps:
-  - name: Hello world action
-    env: # Or as an environment variable
-      testSecret: ${{ secrets.TEST_SECRET }}
+env: # Or as an environment variable
+	testSecret: ${{ secrets.TEST_SECRET }}
