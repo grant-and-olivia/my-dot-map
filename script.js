@@ -3,7 +3,7 @@ $( document ).ready(function() {
 	$.ajax({
 		url: "https://api.github.com/repos/grant-and-olivia/my-dot-map/contents/users/grant.json",
 		headers: {
-			"Authorization": "token bla",
+			"Authorization": "token GITHUB_TOKEN",
 			"Accept": "application/json"
 		},
 		dataType: "json",
@@ -14,5 +14,5 @@ $( document ).ready(function() {
 			console.log("error: " + error);
 	    }
 	});
-	console.log(env);
+	console.log(GITHUB_TOKEN);
 });
